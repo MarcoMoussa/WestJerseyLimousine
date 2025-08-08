@@ -433,7 +433,7 @@ form .name {
     }
 
     header {
-        height: 15vh;
+        height: 10vh;
     }
 
     header .nav button {
@@ -444,8 +444,12 @@ form .name {
         font-size: 0.8rem;
     }
 
+    .info .social_media img {
+        width: 6vw;
+    }
+
     .content0 {
-        height: 15vh;
+        height: 10vh;
     }
 
     .sec1 .box2 h1 {
@@ -501,7 +505,7 @@ form .name {
     }
 
     .sec3 .bbox .sbox {
-        height: 20vh;
+        height: 15vh;
         flex-direction: column;
     }
 
