@@ -1,0 +1,520 @@
+@font-face {
+    font-family: "AlexBrush";
+    src: url("fonts/AlexBrush-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.spacer1 {
+    width: 5%;
+}
+
+.nav button {
+    color: white;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.nav button:hover {
+    color: #FCAF3F;
+}
+
+.nav button.active {
+    color: #FCAF3F;
+}
+
+.title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "AlexBrush";
+    color: #FCAF3F;
+}
+
+.title button {
+    font-size: 2.5vw;
+    background-color: transparent;
+    border: none;
+    color: #FCAF3F;
+    font-family: "AlexBrush";
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.title h2 {
+    font-size: 1.5vw;
+    text-align: center;
+
+}
+
+.vline {
+    height: 50%;
+    width: 0.15vw;
+    background-color: white;
+    margin: 0 1vw 0 1vw;
+}
+
+.content0 {
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#slider {
+    overflow: hidden;
+    height: 90vh;
+}
+
+.slider_container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 600%;
+    transform: translateX(0);
+}
+
+.slide {
+    width: 100vw;
+    min-height: 90vh;
+    flex-shrink: 0;
+    background-color: #292929;
+}
+
+.sec1 .box1 {
+    width: 55vw;
+    height: 60vh;
+    position: absolute;
+    top: 8vh;
+    left: 6vw;
+    background-image: url("images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec1 .box2 {
+    width: 55vw;
+    height: 60vh;
+    position: absolute;
+    top: 20vh;
+    right: 506vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1 .box2 div {
+    width: 80%;
+}
+
+.sec1 .box2 h1 {
+    color: #FFBB00;
+    font-family: "AlexBrush";
+    /* font-size: 3.5rem; */
+    font-size: 3rem;
+}
+
+.sec1 .box2 p {
+    font-size: 1rem;
+}
+
+.sec1 .box2 button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 5% 0 0 0;
+    cursor: pointer;
+}
+
+.sec1 .box2 button:hover {
+    text-decoration: underline;
+}
+
+.content2 {
+    width: 100vw;
+    background-image: url("images/background2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.services1 {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 2% 0;
+}
+
+.slide_show {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.slide_show img {
+    flex: 0 0 auto;
+    width: auto;
+    height: 300px;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.services2 {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 2% 15% 0 15%;
+    font-size: 0.75rem;
+}
+
+.services2 h1 {
+    cursor: pointer;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2vh;
+    padding: 2%;
+    margin: 2% 15% 0 15%;
+    font-size: 1rem;
+}
+
+.info div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.info div a {
+    color: white;
+    text-decoration: none;
+}
+
+.info img {
+    color: white;
+}
+
+.info .social_media img {
+    width: 4vw;
+    padding-left: 1vw;
+}
+
+.sec2 {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.sec2 .box1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15% 0 15%;
+    padding: 5%;
+}
+
+.sec2 .box1 h1 {
+    font-size: 2.5rem;
+    font-family: "AlexBrush";
+}
+
+.sec2 .box1 p {
+    font-size: 1rem;
+}
+
+.sec3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 50%));
+    justify-items: center;
+    padding-top: 2vh;
+    font-size: 1rem;
+}
+
+.sec3 .bbox {
+    height: 25vh;
+    width: 40vw;
+}
+
+.sec3 .bbox .sbox {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 20vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-width: 3px;
+    border-color: #FCAF3F;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.sec3 img {
+    width: 40%;
+}
+
+.sec3 p {
+    font-size: 1.5rem;
+}
+
+.sec4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec4 img {
+    border-radius: 2vw;
+    height: 80vh;
+    max-width: 90vw;
+}
+
+.sec5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 50%));
+    justify-items: center;
+    padding-top: 2vh;
+    font-size: 1rem;
+}
+
+.sec5 .bbox {
+    height: 35vh;
+    width: 40vw;
+}
+
+.sec5 .bbox .sbox {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 28vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-width: 3px;
+    border-color: #FCAF3F;
+    border-style: solid;
+    cursor: pointer;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.sec5 img {
+    width: 40%;
+    max-height: 80%;
+}
+
+.sec5 p {
+    font-size: 1.2rem;
+}
+
+.sec6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.6vw;
+    padding: 2vh 2vw 2vh 2vw;
+    box-sizing: border-box;
+}
+
+form .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    width: 50%;
+    height: 4.5vh;
+    font-size: 1.2rem;
+    border-radius: 0.3vw;
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+
+form select {
+    width: 50%;
+    height: 5vh;
+    font-size: 1.2rem;
+    border-radius: 0.3vw;
+    padding-left: 1vw;
+    margin: 0;
+    background-color: white;
+}
+
+form .submit {
+    background-color: #C80042;
+    width: 20%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+form .br {
+    height: 2vh;
+}
+
+form .phone {
+    width: 50%;
+    display: flex;
+    gap: 1vw;
+}
+
+form .name {
+    width: 50%;
+    display: flex;
+    gap: 1vw;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    header .nav button {
+        font-size: 2vw;
+    }
+
+    .info div a {
+        font-size: 0.8rem;
+    }
+
+    .content0 {
+        height: 15vh;
+    }
+
+    .sec1 .box2 h1 {
+        font-size: 2rem;
+    }
+
+    .services1 img {
+        width: 18%;
+    }
+
+    .sec4 img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .sec2 .box1 {
+        margin: 2vh 8% 0 8%;
+    }
+
+    .sec2 .box1 h1 {
+        font-size: 2rem;
+    }
+
+    .sec2 .box1 p {
+        font-size: 0.8rem;
+    }
+
+    .sec5 .bbox .sbox {
+        height: 20vh;
+        flex-direction: column;
+    }
+
+    .sec5 .bbox .sbox img {
+        width: 75%;
+    }
+
+    .sec5 p {
+        font-size: 0.8rem;
+    }
+
+    .sec6 input {
+        height: 3vh;
+        font-size: 0.9rem;
+    }
+
+    .sec6 select {
+        height: 3vh;
+        font-size: 0.9rem;
+    }
+
+    .sec6 label {
+        font-size: 0.8rem;
+    }
+
+    .sec3 .bbox .sbox {
+        height: 20vh;
+        flex-direction: column;
+    }
+
+    .sec3 .bbox .sbox img {
+        width: 75%;
+    }
+
+    .sec3 p {
+        font-size: 1.2rem;
+    }
+
+    .slide_show img{
+        height: 20vh;
+        width: 25vh;
+    }
+}
